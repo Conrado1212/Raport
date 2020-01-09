@@ -1,0 +1,9 @@
+#hello-text{
+ color: black;
+ font-size: 24px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px;
+}
+#raport-form-wrapper {
+    text-align: center;
+}
