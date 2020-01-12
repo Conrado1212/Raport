@@ -1,16 +1,22 @@
 package pl.edu.wszib.configuration;
 
 
-import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import pl.edu.wszib.dao.IRaportDAO;
-import pl.edu.wszib.dao.impl.RaportDAOImpl;
-import pl.edu.wszib.services.IRaportService;
-import pl.edu.wszib.services.impl.RaportServiceImpl;
+import org.springframework.web.context.annotation.SessionScope;
+import pl.edu.wszib.SessionObject;
 
 @Configuration
 public class AppConfigurtation {
+
+    @Bean
+    @SessionScope
+    public SessionObject sessionObject(){
+        return new SessionObject();
+    }
+
+
+
    /* @Bean
     public SessionFactory hibernateSessionFactory(){
         return new org.hibernate.cfg.Configuration().configure().buildSessionFactory();
