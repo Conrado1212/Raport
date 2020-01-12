@@ -30,7 +30,10 @@ public class LoginController {
     }
     @RequestMapping(value = "/loginPage",method = RequestMethod.POST)
     public String authorization(@ModelAttribute User user){
-        if(user.getLogin().equals("admin")&& user.getPass().equals("admin")){
+        if(user.getLogin().equals("admin")&& user.getPass().equals("admin")
+                ||user.getLogin().equals("admin2")&& user.getPass().equals("admin2")
+                ||user.getLogin().equals("admin3")&& user.getPass().equals("admin3")
+                ||user.getLogin().equals("admin4")&& user.getPass().equals("admin4")){
             System.out.println("Witaj jestes zalogowany w systemie ");
             this.sessionObject.setUser(user);
             return "redirect:mainPage";
