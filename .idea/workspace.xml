@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="74a6388d-8d91-4087-94db-0fcf5754bda8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/RaportDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/RaportDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/raport-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/raport-form.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,7 +27,7 @@
         <counts>
           <entry key="css" value="13" />
           <entry key="html" value="249" />
-          <entry key="java" value="1515" />
+          <entry key="java" value="1521" />
           <entry key="properties" value="2" />
           <entry key="xml" value="5" />
         </counts>
@@ -37,7 +36,7 @@
         <counts>
           <entry key="CSS" value="13" />
           <entry key="HTML" value="249" />
-          <entry key="JAVA" value="1515" />
+          <entry key="JAVA" value="1521" />
           <entry key="Properties" value="2" />
           <entry key="XML" value="5" />
         </counts>
@@ -99,11 +98,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/Raport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+            <state relative-caret-position="408">
+              <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding>
                 <element signature="e#174#175#0" expanded="true" />
                 <element signature="e#202#203#0" expanded="true" />
@@ -113,10 +112,10 @@
                 <element signature="e#352#353#0" expanded="true" />
                 <element signature="e#408#409#0" expanded="true" />
                 <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-                <element signature="e#640#641#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#610#611#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,11 +166,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/RaportDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+            <state relative-caret-position="540">
+              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/wszib/App.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/loginForm.html" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/Raport.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/RaportController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/allRaport.html" />
@@ -214,6 +212,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/mainPage.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/raport-form.css" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/RaportDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/Raport.java" />
       </list>
     </option>
   </component>
@@ -392,7 +391,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578932284061" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578932535351" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -453,7 +452,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32443047" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32443047" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -461,7 +460,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.3299293" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -616,20 +615,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/RaportDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/Raport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="408">
+          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding>
             <element signature="e#174#175#0" expanded="true" />
             <element signature="e#202#203#0" expanded="true" />
@@ -639,10 +628,20 @@
             <element signature="e#352#353#0" expanded="true" />
             <element signature="e#408#409#0" expanded="true" />
             <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/RaportDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
