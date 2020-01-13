@@ -51,6 +51,8 @@ public class LoginController {
         return "mainPage";
     }
 
+
+
     @RequestMapping(value = "/logout",method = RequestMethod.GET)
     public String logout(){
         this.sessionObject.setUser(null);
