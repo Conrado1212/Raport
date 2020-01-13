@@ -53,16 +53,25 @@ public class LoginController {
     @RequestMapping(value = "/mainPage",method = RequestMethod.GET)
     public String page(Model model){
         if(this.sessionObject.getUser() == null){
+
+
             return "redirect:loginPage";
         }
+
         return "mainPage";
     }
-
 
 
     @RequestMapping(value = "/logout",method = RequestMethod.GET)
     public String logout(){
         this.sessionObject.setUser(null);
+        System.out.println("Jestes wylogowany");
+        Date dNow1 = new Date( );
+        SimpleDateFormat ft1 =
+                new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+
+        System.out.println("Current Date: " + ft1.format(dNow1));
+        
         return "redirect:loginPage";
     }
 
