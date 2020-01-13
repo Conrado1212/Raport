@@ -11,6 +11,8 @@ import pl.edu.wszib.SessionObject;
 import pl.edu.wszib.model.User;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @Controller
 public class LoginController {
@@ -36,6 +38,11 @@ public class LoginController {
         if(user.getLogin().equals("admin") && user.getPass().equals("admin") || user.getLogin().equals("admin1") && user.getPass().equals("admin1")
                 || user.getLogin().equals("admin2") && user.getPass().equals("admin2") || user.getLogin().equals("admin3") && user.getPass().equals("admin3")){
             System.out.println("Witaj jestes zalogowany!!");
+            Date dNow = new Date( );
+            SimpleDateFormat ft =
+                    new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+
+            System.out.println("Current Date: " + ft.format(dNow));
             this.sessionObject.setUser(user);
             return "redirect:mainPage";
         }
