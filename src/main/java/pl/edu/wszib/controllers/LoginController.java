@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 import pl.edu.wszib.SessionObject;
 import pl.edu.wszib.model.User;
 
@@ -22,31 +23,31 @@ public class LoginController {
         return "redirect:loginPage";
     }
 
-    @RequestMapping(value = "/loginPage", method = RequestMethod.GET)
-    public String loginPage(Model model) {
-        model.addAttribute("user", new User());
-        return "loginPage";
 
+
+    @RequestMapping(value = "/loginPage", method = RequestMethod.GET)
+    public ModelAndView loginPage( ) {
+        return new ModelAndView("loginPAge","loginKey", new User());
     }
+
+
     @RequestMapping(value = "/loginPage",method = RequestMethod.POST)
-    public String authorization(@ModelAttribute User user){
-        if(user.getLogin().equals("admin")&& user.getPass().equals("admin")
-                ||user.getLogin().equals("admin2")&& user.getPass().equals("admin2")
-                ||user.getLogin().equals("admin3")&& user.getPass().equals("admin3")
-                ||user.getLogin().equals("admin4")&& user.getPass().equals("admin4")){
-            System.out.println("Witaj jestes zalogowany w systemie ");
+    public String loginForm(@ModelAttribute("loginKey") User user){
+        if(user.getLogin().equals("admin") && user.getPass().equals("admin") || user.getLogin().equals("admin1") && user.getPass().equals("admin1")
+                || user.getLogin().equals("admin2") && user.getPass().equals("admin2") || user.getLogin().equals("admin3") && user.getPass().equals("admin3")){
+            System.out.println("Witaj jestes zalogowany!!");
             this.sessionObject.setUser(user);
             return "redirect:mainPage";
         }
+        System.out.println(user);
         return "loginPage";
     }
 
     @RequestMapping(value = "/mainPage",method = RequestMethod.GET)
     public String page(Model model){
-        if(this.sessionObject.getClass()==null){
+        if(this.sessionObject.getUser() == null){
             return "redirect:loginPage";
         }
-        model.addAttribute("loginPage",this.sessionObject.getUser().getLogin());
         return "mainPage";
     }
 
