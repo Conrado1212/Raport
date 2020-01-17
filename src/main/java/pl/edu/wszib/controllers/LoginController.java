@@ -71,7 +71,7 @@ public class LoginController {
                 new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
 
         System.out.println("Current Date: " + ft1.format(dNow1));
-        
+
         return "redirect:loginPage";
     }
 
