@@ -88,10 +88,10 @@ public class RepositoryPointOfSales {
                 '}';
     }
 
-    public  void vv() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy MMM dd HH:mm:ss");
-        Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
-        System.out.println(sdf.format(calendar.getTime()));
-        System.out.println(calendar.get(Calendar.HOUR_OF_DAY)); // the day of the week in numerical format
-    }
+//    public  void vv() {
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy MMM dd HH:mm:ss");
+//        Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
+//        System.out.println(sdf.format(calendar.getTime()));
+//        System.out.println(calendar.get(Calendar.HOUR_OF_DAY)); // the day of the week in numerical format
+//    }
 }
