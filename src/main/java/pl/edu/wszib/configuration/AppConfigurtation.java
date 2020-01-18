@@ -1,6 +1,7 @@
 package pl.edu.wszib.configuration;
 
 
+import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.context.annotation.SessionScope;
@@ -15,13 +16,12 @@ public class AppConfigurtation {
         return new SessionObject();
     }
 
-
-
-   /* @Bean
     public SessionFactory hibernateSessionFactory(){
         return new org.hibernate.cfg.Configuration().configure().buildSessionFactory();
     }
 
+
+   /* @Bean
     @Bean
     public IRaportDAO raportDAO(SessionFactory hibernateSessionFactory){
         return new RaportDAOImpl(hibernateSessionFactory);

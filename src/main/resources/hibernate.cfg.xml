@@ -6,7 +6,7 @@
     <session-factory>
         <!-- Database Connection settings -->
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/employee</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/repositorypointofsales</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password"></property>
 
@@ -20,6 +20,6 @@
         <property name="hibernate.hbm2ddl.auto">create</property>
 
         <!-- mappings -->
-        <mapping class="pl.edu.wszib.model.Employee" />
+        <mapping class="pl.edu.wszib.model.RepositoryPointOfSales" />
     </session-factory>
 </hibernate-configuration>

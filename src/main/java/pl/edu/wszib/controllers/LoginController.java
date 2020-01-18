@@ -14,6 +14,7 @@ import javax.annotation.Resource;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
 @Controller
 public class LoginController {
 
@@ -44,6 +45,7 @@ public class LoginController {
 
             System.out.println("Current Date: " + ft.format(dNow));
             this.sessionObject.setUser(user);
+
             return "redirect:mainPage";
         }
         System.out.println(user);
