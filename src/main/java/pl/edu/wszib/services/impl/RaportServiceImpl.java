@@ -11,7 +11,7 @@ public class RaportServiceImpl implements IRaportService {
         this.raportDAO = raportDAO;
     }
 
-    /*
+
     @Override
     public Raport getRaportByLogin(String login){
         return this.raportDAO.getRaportByLogin(login);
@@ -25,5 +25,5 @@ public class RaportServiceImpl implements IRaportService {
     @Override
     public Raport getRaportByWhenWasLogged(String whenWasLogged){
         return this.raportDAO.getRaportByLogin(whenWasLogged);
-    }*/
+    }
 }

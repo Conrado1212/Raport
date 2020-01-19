@@ -1,9 +1,17 @@
 package pl.edu.wszib.model;
 
+import java.util.Calendar;
+
 public class Raport {
     private String login;
     private String pointOfSales;
-    private String whenWasLogged;
+    private Calendar whenWasLogged;
+
+    public Raport(String login, String pointOfSales, Calendar whenWasLogged) {
+        this.login = login;
+        this.pointOfSales = pointOfSales;
+        this.whenWasLogged = whenWasLogged;
+    }
 
     public String getLogin() {
         return login;
@@ -21,11 +29,11 @@ public class Raport {
         this.pointOfSales = pointOfSales;
     }
 
-    public String getWhenWasLogged() {
+    public Calendar getWhenWasLogged() {
         return whenWasLogged;
     }
 
-    public void setWhenWasLogged(String whenWasLogged) {
+    public void setWhenWasLogged(Calendar whenWasLogged) {
         this.whenWasLogged = whenWasLogged;
     }
 

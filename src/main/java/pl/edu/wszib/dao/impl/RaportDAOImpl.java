@@ -58,7 +58,7 @@ public class RaportDAOImpl implements IRaportDAO {
         return raports;
     }
 
-    /*
+
     SessionFactory sessionFactory;
 
     public RaportDAOImpl(SessionFactory sessionFactory){
@@ -110,10 +110,10 @@ public class RaportDAOImpl implements IRaportDAO {
     }
 
     @Override
-    public List<Raport> getAllRaport(){
+    public List<Raport> getAllRaports(){
         Session session = sessionFactory.openSession();
         List<Raport> raports = session.createQuery("FROM pl.edu.wszib.model.Raport").list();
         session.close();
         return raports;
-    }*/
+    }
 }
