@@ -34,18 +34,18 @@ public class RaportDAOImpl implements IRaportDAO {
         Raport raport2 = new Raport();
         raport2.setLogin("Piotr");
         raport2.setPointOfSales("point2");
-        raport2.setWhenWasLogged( ft.format(dNow));
+        raport2.setWhenWasLogged(  ft.format(dNow));
 
         Raport raport3 = new Raport();
         raport3.setLogin("Paweł");
         raport3.setPointOfSales("point3");
-        raport3.setWhenWasLogged( ft.format(dNow));
+        raport3.setWhenWasLogged(  ft.format(dNow));
 
 
         Raport raport4 = new Raport();
         raport4.setLogin("Jan");
         raport4.setPointOfSales("point4");
-        raport4.setWhenWasLogged( ft.format(dNow));
+        raport4.setWhenWasLogged( ft.getCalendar());
 
         this.raports.add(raport1);
         this.raports.add(raport2);

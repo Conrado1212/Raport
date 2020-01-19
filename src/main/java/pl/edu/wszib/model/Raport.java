@@ -1,16 +1,18 @@
 package pl.edu.wszib.model;
 
-import java.util.Calendar;
-
 public class Raport {
     private String login;
     private String pointOfSales;
-    private Calendar whenWasLogged;
+    private String whenWasLogged;
 
-    public Raport(String login, String pointOfSales, Calendar whenWasLogged) {
+    public Raport(String login, String pointOfSales, String whenWasLogged) {
         this.login = login;
         this.pointOfSales = pointOfSales;
         this.whenWasLogged = whenWasLogged;
+    }
+
+    public Raport() {
+
     }
 
     public String getLogin() {
@@ -29,11 +31,11 @@ public class Raport {
         this.pointOfSales = pointOfSales;
     }
 
-    public Calendar getWhenWasLogged() {
+    public String getWhenWasLogged() {
         return whenWasLogged;
     }
 
-    public void setWhenWasLogged(Calendar whenWasLogged) {
+    public void setWhenWasLogged(String whenWasLogged) {
         this.whenWasLogged = whenWasLogged;
     }
 
@@ -45,4 +47,6 @@ public class Raport {
                 ", whenWasLogged='" + whenWasLogged + '\'' +
                 '}';
     }
+
+
 }
