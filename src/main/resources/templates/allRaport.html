@@ -8,13 +8,14 @@
 <body>
 <center><p id="hello-text"><b>Wszystkie raporty</b></p></center>
 <div id="raport-form-wrapper">
+   <center> <table class="text-list">
     <form action="/allRaport" method="post" id="raport-form">
         <div th:each="raport : ${allRaport}">
-            <div  th:text="'Login: '+${raport.login}"></div>
-            <div  th:text="'PointOfSales: '+${raport.pointOfSales}"></div>
-            <div  th:text="'WhenWasLogged: '+${raport.whenWasLogged}"></div><br>
+        <td>  <div  th:text="'Login: '+${raport.login}"></div></td>
+           <td>  <div  th:text="'PointOfSales: '+${raport.pointOfSales}"></div></td>
+              <td>   <div  th:text="'WhenWasLogged: '+${raport.whenWasLogged}"></div></td><tr></tr>
         </div>
     </form>
-</div>
+    </table></center></div>
 </body>
 </html>
