@@ -8,10 +8,29 @@
 </head>
 <body>
 <form action="/loginPage" method="post" id="login-form">
-    <center><p id="hello-text"><b>Zaloguj sie </b></p></center>
-    <input type="text" id="login" th:field="*{loginKey.login}" class="text-field" placeholder="Login">
-    <input type="password" id="pass" th:field="*{loginKey.pass}" class="text-field" placeholder="Password">
-    <input type="submit" class="button-box" value="OK">
+    <div class="imgcontainer">
+        <img src="avatar.jpg" alt="Avatar" class="avatar">
+
+    </div>
+
+    <div class="container">
+
+        <center><input type="text" th:field="*{loginKey.login}"placeholder="Enter Username" name="uname" required></center>
+
+
+        <center> <input type="password"th:field="*{loginKey.pass}" placeholder="Enter Password" name="psw" required></center>
+
+        <center> <button type="submit">Login</button></center>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+
 </form>
 </body>
 </html>
