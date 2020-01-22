@@ -23,12 +23,12 @@ public class AppConfigurtation {
 
    /* @Bean
     @Bean
-    public IRaportDAO raportDAO(SessionFactory hibernateSessionFactory){
-        return new RaportDAOImpl(hibernateSessionFactory);
+    public IReportThatYouCanSeeDAO raportDAO(SessionFactory hibernateSessionFactory){
+        return new ReportThatYouCanSeeDAOImpl(hibernateSessionFactory);
     }
     @Bean
-    public IRaportService raportService(IRaportDAO raportDAO){
-        return  new RaportServiceImpl(raportDAO);
+    public IReportThatYouCanSeeService raportService(IReportThatYouCanSeeDAO raportDAO){
+        return  new ReportThatYouCanSeeServiceImpl(raportDAO);
 
     }*/
 }

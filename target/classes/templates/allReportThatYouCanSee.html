@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Raport</title>
+    <link rel="stylesheet" type="text/css" href="reportThatYouCanSee-form.css">
+</head>
+<body>
+<center><p id="hello-text"><b>Wszystkie raporty</b></p></center>
+<div id="reportThatYouCanSee-form-wrapper">
+   <center> <table class="text-list">
+    <form action="/allReportThatYouCanSee" method="post" id="reportThatYouCanSee-form">
+        <div th:each="reportThatYouCanSee : ${allReportThatYouCanSee}">
+        <td>  <div  th:text="'Login: '+${reportThatYouCanSee.login}"></div></td>
+           <td>  <div  th:text="'PointOfSales: '+${reportThatYouCanSee.pointOfSales}"></div></td>
+              <td>   <div  th:text="'WhenWasLogged: '+${reportThatYouCanSee.whenWasLogged}"></div></td><tr></tr>
+        </div>
+    </form>
+    </table></center></div>
+</body>
+</html>

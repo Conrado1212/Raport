@@ -1,17 +1,17 @@
 package pl.edu.wszib.model;
 
-public class Raport {
+public class ReportThatYouCanSee {
     private String login;
     private String pointOfSales;
     private String whenWasLogged;
 
-    public Raport(String login, String pointOfSales, String whenWasLogged) {
+    public ReportThatYouCanSee(String login, String pointOfSales, String whenWasLogged) {
         this.login = login;
         this.pointOfSales = pointOfSales;
         this.whenWasLogged = whenWasLogged;
     }
 
-    public Raport() {
+    public ReportThatYouCanSee() {
 
     }
 
@@ -41,7 +41,7 @@ public class Raport {
 
     @Override
     public String toString() {
-        return "Raport{" +
+        return "ReportThatYouCanSee{" +
                 "login='" + login + '\'' +
                 ", pointOfSales='" + pointOfSales + '\'' +
                 ", whenWasLogged='" + whenWasLogged + '\'' +
