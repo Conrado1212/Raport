@@ -9,12 +9,16 @@ public interface IRepositoryPointOfSalesDAO {
     void addProductAfterSale(RepositoryPointOfSales repositoryPointOfSales); //adding product after sale
 
 
-    List<RepositoryPointOfSales> getAllProductsFromRepository(); // return  list of products grouped by idPointOfSales and productName and sum amount and totalPrice
-    List<RepositoryPointOfSales> getAllSalesWithDateFromRepository(); // return all sales without group by with date
-    List<RepositoryPointOfSales> getAllSalesWithDateFromRepositoryByPoint(String idPointOfSales); // return all sales from pointOfSales without group by, with date
-    List<RepositoryPointOfSales> getAllProductsFromRepositoryByPoint(String idPointOfSales); // return  list of products from pointOfSales grouped by idPointOfSales and productName and sum amount and totalPrice
+    List<RepositoryPointOfSales> getProductsFromRepository(); // return  list of products grouped by idPointOfSales and productName, with sum amount and totalPrice
 
-    void averageOfDay(String idPointOfSales, Calendar firstDay, Calendar secondDay);
-    void averageOfMonth(String idPointOfSales, Calendar firstMonth, Calendar secondMonth);
+    List<RepositoryPointOfSales> getSalesWithDateFromRepository(); // return all sales without group by , with date
+
+    List<RepositoryPointOfSales> getSalesWithDateFromRepositoryByPoint(int idPointOfSales); // return all sales from pointOfSales , with date
+
+    List<RepositoryPointOfSales> getProductsFromRepositoryByPoint(int idPointOfSales); // return  list of products from pointOfSales grouped by idPointOfSales and productName, with sum amount and totalPrice
+
+    List<RepositoryPointOfSales> averageOfDay(int idPointOfSales, Calendar firstDay, Calendar secondDay); //return list of average sales per day in the interval firstDay - secondDay
+
+    List<RepositoryPointOfSales> averageOfMonth(int idPointOfSales, Calendar firstMonth, Calendar secondMonth); //return list of average sales per month in the interval firstMonth - secondMonth
 
 }

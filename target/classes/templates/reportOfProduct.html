@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Report of product</title>
+</head>
+<body>
+<form action="/showProductsFromRepository" method="post">
+    <input type="submit" class="button-box" value="showProductsFromRepository">
+</form>
+<form action="/showSalesWithDateFromRepository" method="post">
+    <input type="submit" class="button-box" value="showSalesWithDateFromRepository">
+</form>
+<form action="/showSalesWithDateFromRepositoryByPoint" method="post">
+    <input type="submit" class="button-box" value="showSalesWithDateFromRepositoryByPoint">
+    <input type ="text" placeholder="idPointOfSales" name="id">
+</form>
+<form action="/showProductsFromRepositoryByPoint" method="post">
+    <input type="submit" class="button-box" value="showProductsFromRepositoryByPoint">
+    <input type ="text" placeholder="idPointOfSales" name="id">
+</form>
+
+
+<a href="/pointOfSalesPage" class="button">Home</a><br><br>
+</body>
+</html>

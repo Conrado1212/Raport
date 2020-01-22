@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>addProductToRepository.html</title>
+</head>
+<body>
+
+<form method="post">
+    <input type="text" placeholder="idPointOfSales" name="id" th:field="*{userModel.idPointOfSales}">
+    <input type="text" placeholder="productName" name="name" th:field="*{userModel.productName}">
+    <input type="text" placeholder="priceForOneProduct" name="surname" th:field="*{userModel.priceForOneProduct}">
+    <input type="text" placeholder="amountOfProduct" name="position" th:field="*{userModel.amountOfProduct}">
+
+    <input type="submit" value="OK">
+</form>
+
+</body>
+</html>
