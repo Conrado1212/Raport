@@ -23,5 +23,6 @@
         <mapping class="pl.edu.wszib.model.ReportThatYouCanSee" />
         <mapping class="pl.edu.wszib.model.Sales"/>
         <mapping class="pl.edu.wszib.model.SalesDetails"/>
+        <mapping class="pl.edu.wszib.model.RepositoryPointOfSales"/>
     </session-factory>
 </hibernate-configuration>
