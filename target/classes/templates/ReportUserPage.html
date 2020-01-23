@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Wszystkie Pytania</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body >
+
+<div >
+
+    <div th:each="sales1 : ${sales3}">
+        <div th:text="'UserID: '+${sales3.userID}"></div>
+        <div th:text="'Sales Per Month: '+${sales3.salesPerMonth}"></div>
+       <div th:text="'Sales Per Day: '+${sales3.salesPerDay}"></div>
+
+    </div>
+    <div th:each="sales2 : ${sales3}">
+        <div th:text="'Amount Of Sales: '+${sales3.amountOfSales}"></div>
+    </div>
+
+
+
+
+
+    <form method="get" id="heniek" >
+        <button formaction="/mainPage">Wróć do Menu</button>
+    </form>
+    </center>
+</div>
+
+
+</body>
+</html>

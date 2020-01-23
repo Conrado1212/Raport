@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuń Pytanie</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="remove">
+<center>
+    <form action="/UserReport" method="post" id="user-report-form">
+        <input type="number" placeholder="userID" name="userID" th:field="*{userID.userID}">
+        <input type="submit" value="OK">
+        <br>
+        <br>
+
+    </form>
+
+</center>
+
+</body>
+</html>

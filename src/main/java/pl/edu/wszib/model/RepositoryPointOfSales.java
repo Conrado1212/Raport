@@ -1,13 +1,14 @@
 package pl.edu.wszib.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 @Entity
 @Table(name="trepositorypointofsales")
 public class RepositoryPointOfSales {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String idPointOfSales;
     private String productName;
     private int amountOfProduct;

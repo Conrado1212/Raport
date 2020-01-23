@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="login-form.css">
-    <link rel="stylesheet" type="text/css" href="components.css">
+    <link rel="stylesheet" type="text/css" href="../static/login-form.css">
+    <link rel="stylesheet" type="text/css" href="../static/components.css">
 </head>
 <body>
 <form action="/loginPage" method="post" id="login-form">
-    <center><p id="hello-text"><b>Log in </b></p></center>
+    <center><p id="hello-text"><b>Zaloguj sie </b></p></center>
     <input type="text" id="login" th:field="*{loginKey.login}" class="text-field" placeholder="Login">
     <input type="password" id="pass" th:field="*{loginKey.pass}" class="text-field" placeholder="Password">
     <input type="submit" class="button-box" value="OK">
