@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>mainSite</title>
+    <link rel="stylesheet" type="text/css" href="mainPage-form.css">
 </head>
 <body>
-<div th:text="'Witaj: '+${login}"></div>
-<a href="/allReportThatYouCanSee" class="button">1.Pełna lista raportow:</a><br><br>
-<a href="/logout">Wyloguj</a>
+<form action="/mainPage" method="post" id="mainPage-form">
+<div>
+    <img src="logo.png" alt="Logo" class="logo">
+</div><br>
+
+
+<a href="/reportThatYouCanSeePage" class="clickbtn">ReportThatYouCanSee</a><br><br><br>
+<a href="/logout" class="buttonLogOut">Wyloguj</a>
+</form>
 </body>
 </html>

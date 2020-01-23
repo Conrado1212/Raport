@@ -5,6 +5,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import pl.edu.wszib.dao.IReportThatYouCanSeeDAO;
 import pl.edu.wszib.model.ReportThatYouCanSee;
@@ -17,7 +18,7 @@ import java.util.List;
 @Component
 public class ReportThatYouCanSeeDAOImpl implements IReportThatYouCanSeeDAO {
 
-    private List<ReportThatYouCanSee> reportThatYouCanSees = new ArrayList<>();
+  /*  private List<ReportThatYouCanSee> reportThatYouCanSees = new ArrayList<>();
 
     public ReportThatYouCanSeeDAOImpl(){
         Date dNow = new Date( );
@@ -56,9 +57,9 @@ public class ReportThatYouCanSeeDAOImpl implements IReportThatYouCanSeeDAO {
     @Override
     public List<ReportThatYouCanSee> getAllRaport(){
         return reportThatYouCanSees;
-    }
+    }*/
 
-
+    @Autowired
     SessionFactory sessionFactory;
 
     public ReportThatYouCanSeeDAOImpl(SessionFactory sessionFactory){
@@ -66,7 +67,7 @@ public class ReportThatYouCanSeeDAOImpl implements IReportThatYouCanSeeDAO {
     }
 
     @Override
-    public void saveRaport(ReportThatYouCanSee reportThatYouCanSee){
+    public void saveRaport(ReportThatYouCanSee reportThatYouCanSee){ //add
         Session session = null;
         Transaction tx = null;
 

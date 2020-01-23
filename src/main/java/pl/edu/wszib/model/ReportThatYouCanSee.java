@@ -1,11 +1,21 @@
 package pl.edu.wszib.model;
 
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Table;
+import java.util.Date;
+@Entity
+@Table(name = "treportthatyoucansee")
 public class ReportThatYouCanSee {
+    @javax.persistence.Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String login;
     private String pointOfSales;
-    private String whenWasLogged;
+    private Date whenWasLogged;
 
-    public ReportThatYouCanSee(String login, String pointOfSales, String whenWasLogged) {
+    public ReportThatYouCanSee(String login, String pointOfSales, Date whenWasLogged) {
         this.login = login;
         this.pointOfSales = pointOfSales;
         this.whenWasLogged = whenWasLogged;
@@ -31,11 +41,11 @@ public class ReportThatYouCanSee {
         this.pointOfSales = pointOfSales;
     }
 
-    public String getWhenWasLogged() {
+    public Date getWhenWasLogged() {
         return whenWasLogged;
     }
 
-    public void setWhenWasLogged(String whenWasLogged) {
+    public void setWhenWasLogged(Date whenWasLogged) {
         this.whenWasLogged = whenWasLogged;
     }
 
@@ -44,7 +54,7 @@ public class ReportThatYouCanSee {
         return "ReportThatYouCanSee{" +
                 "login='" + login + '\'' +
                 ", pointOfSales='" + pointOfSales + '\'' +
-                ", whenWasLogged='" + whenWasLogged + '\'' +
+                ", whenWasLogged=" + whenWasLogged +
                 '}';
     }
 

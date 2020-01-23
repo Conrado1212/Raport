@@ -5,7 +5,7 @@ import pl.edu.wszib.model.ReportThatYouCanSee;
 import java.util.List;
 
 public interface IReportThatYouCanSeeDAO {
-    List<ReportThatYouCanSee> getAllRaport();
+   // List<ReportThatYouCanSee> getAllRaport();
 
     void saveRaport(ReportThatYouCanSee reportThatYouCanSee);
 

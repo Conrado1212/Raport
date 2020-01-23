@@ -2,27 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74a6388d-8d91-4087-94db-0fcf5754bda8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/allReportThatYouCanSee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/PointOfSalesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/RepositoryPointOfSalesDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/services/IRepositoryPointOfSalesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/services/impl/RepositoryPointOfSalesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addProductToRepository.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/averageOfDayOrMonth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pointOfSalesPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/productsFromRepositoryByPoint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/reportOfProduct.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/salesFromRepository.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/salesGroupedByProductAndPoint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/salesWithDateFromRepositoryByPoint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/raport-project.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/controllers/PointOfSalesController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/dao/impl/RepositoryPointOfSalesDAOImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/services/IRepositoryPointOfSalesService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/services/impl/RepositoryPointOfSalesServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/addProductToRepository.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/averageOfDayOrMonth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/pointOfSalesPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/productsFromRepositoryByPoint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/reportOfProduct.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/salesFromRepository.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/salesGroupedByProductAndPoint.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/salesWithDateFromRepositoryByPoint.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/configuration/AppConfigurtation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/configuration/AppConfigurtation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/RaportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/ReportThatYouCanSeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/IRaportDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/IReportThatYouCanSeeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/RaportDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/ReportThatYouCanSeeDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/Raport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/ReportThatYouCanSee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/services/IRaportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/services/IReportThatYouCanSeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/services/impl/RaportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/services/impl/ReportThatYouCanSeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/raport-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/reportThatYouCanSee-form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/allRaport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/ReportThatYouCanSeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/ReportThatYouCanSeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/IReportThatYouCanSeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/IReportThatYouCanSeeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/IRepositoryPointOfSalesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/IRepositoryPointOfSalesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/ReportThatYouCanSeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/ReportThatYouCanSeeDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/RepositoryPointOfSalesImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/ReportThatYouCanSee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/ReportThatYouCanSee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/RepositoryPointOfSales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/RepositoryPointOfSales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/login-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/login-form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/reportThatYouCanSee-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/allReportThatYouCanSee-form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/allReportThatYouCanSee.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/allReportThatYouCanSee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/loginPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/controllers/RaportController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/dao/IRaportDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/dao/impl/RaportDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/model/Raport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/services/IRaportService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/services/impl/RaportServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/raport-form.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/allRaport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/configuration/AppConfigurtation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/configuration/AppConfigurtation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/controllers/ReportThatYouCanSeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/controllers/ReportThatYouCanSeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/dao/IReportThatYouCanSeeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/dao/IReportThatYouCanSeeDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/dao/IRepositoryPointOfSalesDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/dao/IRepositoryPointOfSalesDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/dao/impl/ReportThatYouCanSeeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/dao/impl/ReportThatYouCanSeeDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/dao/impl/RepositoryPointOfSalesImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/model/ReportThatYouCanSee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/model/ReportThatYouCanSee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/model/RepositoryPointOfSales.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/model/RepositoryPointOfSales.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/login-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/login-form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/loginPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/mainPage.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,32 +68,33 @@
     <session id="1527628613">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
-          <entry key="project.open.time.1" value="13" />
+          <entry key="project.closed" value="23" />
+          <entry key="project.open.time.1" value="14" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="51" />
+          <entry key="css" value="140" />
           <entry key="dummy" value="78" />
-          <entry key="html" value="388" />
-          <entry key="java" value="1896" />
+          <entry key="html" value="723" />
+          <entry key="java" value="2221" />
           <entry key="properties" value="2" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="51" />
-          <entry key="HTML" value="388" />
-          <entry key="JAVA" value="1896" />
+          <entry key="CSS" value="140" />
+          <entry key="HTML" value="723" />
+          <entry key="JAVA" value="2221" />
           <entry key="PLAIN_TEXT" value="78" />
           <entry key="Properties" value="2" />
           <entry key="XML" value="5" />
@@ -70,22 +102,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="13" />
-          <entry key="html" value="17" />
-          <entry key="java" value="42" />
-          <entry key="jpg" value="1" />
+          <entry key="css" value="23" />
+          <entry key="html" value="41" />
+          <entry key="java" value="68" />
+          <entry key="jpg" value="2" />
+          <entry key="png" value="1" />
           <entry key="properties" value="6" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="13" />
-          <entry key="HTML" value="17" />
-          <entry key="Image" value="1" />
-          <entry key="JAVA" value="42" />
+          <entry key="CSS" value="23" />
+          <entry key="HTML" value="41" />
+          <entry key="Image" value="3" />
+          <entry key="JAVA" value="68" />
           <entry key="Properties" value="6" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -93,10 +126,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/loginPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            <state relative-caret-position="306">
+              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -104,62 +137,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/ReportThatYouCanSeeDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/allReportThatYouCanSee.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+            <state relative-caret-position="984">
+              <caret line="113" column="50" selection-start-line="113" selection-start-column="37" selection-end-line="113" selection-end-column="50" />
+              <folding>
+                <element signature="e#2388#2389#0" expanded="true" />
+                <element signature="e#2440#2441#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/IReportThatYouCanSeeDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addReportThatYouCanSee.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="187">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/LoginController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/addReportThatYouCanSee-form.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="782">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/ReportThatYouCanSee.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/PointOfSalesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/reportThatYouCanSee-form.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/mainPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            <state relative-caret-position="323">
+              <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -167,8 +177,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/ReportThatYouCanSeeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="689">
+              <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,10 +187,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/SessionObject.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/RepositoryPointOfSalesDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="17">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/mainPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/reportThatYouCanSeePage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/reportThatYouCanSeePage-form.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -219,19 +256,28 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/allRaport.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/raport-form.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/login-form.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/loginPage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/ReportThatYouCanSee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/IReportThatYouCanSeeDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/ReportThatYouCanSeeDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/ReportThatYouCanSeeController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/mainPage.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/loginPage.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/login-form.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/indexAddReportThatYouCanSee.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/allReportThatYouCanSee.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/ReportThatYouCanSeePage.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/mainPage.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/mainPage-form.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/addReportThatYouCanSee-form.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/reportThatYouCanSeePage.css" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/ReportThatYouCanSeeController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/addReportThatYouCanSee.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/reportThatYouCanSeePage.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="725" />
-    <option name="y" value="227" />
-    <option name="width" value="1780" />
+    <option name="x" value="365" />
+    <option name="y" value="258" />
+    <option name="width" value="2045" />
     <option name="height" value="1103" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -334,18 +380,6 @@
               <item name="pl" type="462c0819:PsiDirectoryNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
               <item name="wszib" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="raportproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="raportproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="wszib" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -398,14 +432,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579700871594" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Raport-userReport" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579791005070" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -458,9 +492,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="112" y="30" width="1424" height="882" extended-state="1" />
+    <frame x="365" y="258" width="2045" height="1103" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29912025" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19949622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -469,7 +504,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3503546" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2376502" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23735811" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39919892" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -477,7 +512,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32765958" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32714137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -492,84 +527,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
           <caret line="94" column="12" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="94" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/services/IReportThatYouCanSeeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/services/impl/ReportThatYouCanSeeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/configuration/AppConfigurtation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/RepositoryPointOfSales.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/loginPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/components.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login-form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/avatar.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/SessionObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -580,62 +541,256 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/reportThatYouCanSee-form.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/SessionObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="10" />
+        <state relative-caret-position="187">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/ReportThatYouCanSee.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/salesWithDateFromRepositoryByPoint.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/salesGroupedByProductAndPoint.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/salesFromRepository.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/reportOfProduct.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/productsFromRepositoryByPoint.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pointOfSalesPage.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/components.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/averageOfDayOrMonth.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/configuration/AppConfigurtation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/services/impl/ReportThatYouCanSeeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/services/IRepositoryPointOfSalesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/services/IReportThatYouCanSeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/services/impl/RepositoryPointOfSalesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/IReportThatYouCanSeeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/ReportThatYouCanSee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/App.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#295#296#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/avatar.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/ReportThatYouCanSeeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/model/RepositoryPointOfSales.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="17">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/mainPage.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login-form.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="867">
+          <caret line="51" selection-start-line="51" selection-end-line="56" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/ReportThatYouCanSeeDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/indexAddReportThatYouCanSee.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/allReportThatYouCanSee-form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addProductToRepository.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/allReportThatYouCanSee.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+        <state relative-caret-position="85">
+          <caret line="5" column="82" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="60" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/mainPage-form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/mainPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/reportThatYouCanSeePage-form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/loginPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/PointOfSalesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/RepositoryPointOfSalesDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/dao/impl/ReportThatYouCanSeeDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="113" column="50" selection-start-line="113" selection-start-column="37" selection-end-line="113" selection-end-column="50" />
+          <folding>
+            <element signature="e#2388#2389#0" expanded="true" />
+            <element signature="e#2440#2441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/addReportThatYouCanSee-form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/ReportThatYouCanSeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addReportThatYouCanSee.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/reportThatYouCanSeePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
         </state>
       </provider>
     </entry>

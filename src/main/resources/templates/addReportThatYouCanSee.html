@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>addReportThatYouCanSee</title>
+    <link rel="stylesheet" type="text/css" href="addReportThatYouCanSee-form.css">
+</head>
+<body>
+<form action="/addReportThatYouCanSeePage" method="post" id="addReportThatYouCanSee-form">
+    <div>
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+    <center>  <h1>Add Report</h1></center>
+    <center>   <p>Please fill in this form to add a Report.</p></center>
+    <hr>
+
+    <center>
+        <input type ="text" placeholder=" Enter Login" name="login" th:field="*{addReportThatYouCanSeeKey.login}"></center><br>
+        <center> <input type ="text" placeholder="Enter PointOfSales" name="pointOfSales"
+           th:field="*{addReportThatYouCanSeeKey.pointOfSales}"></center><br>
+</hr>
+    <center>  <button type="submit" class="addbtn">Add Report</button></center>
+</form>
+</body>
+</html>

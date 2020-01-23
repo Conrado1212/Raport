@@ -1,38 +1,47 @@
 package pl.edu.wszib.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Table;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
+
 @Entity
-@Table(name="trepositorypointofsales")
+@Table(name = "trepositorypointofsales")
 public class RepositoryPointOfSales {
-    private String idPointOfSales;
+    @javax.persistence.Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+
+    private int idPointOfSales;
     private String productName;
     private int amountOfProduct;
     private int priceForOneProduct;
     private int totalPrice;
-    private Calendar dateOfSell;
+    private Date dateOfSell;
 
-    public  RepositoryPointOfSales(){
+
+    public RepositoryPointOfSales() {
 
     }
 
-    public RepositoryPointOfSales(String idPointOfSales, String productName, int amountOfProduct, int priceForOneProduct) {
+    public RepositoryPointOfSales(int idPointOfSales, String productName, int amountOfProduct, int priceForOneProduct) {
         this.idPointOfSales = idPointOfSales;
         this.productName = productName;
         this.amountOfProduct = amountOfProduct;
         this.priceForOneProduct = priceForOneProduct;
         this.totalPrice = amountOfProduct * priceForOneProduct;
-        this.dateOfSell = Calendar.getInstance();
     }
 
-    public String getIdPointOfSales() {
+    public int getIdPointOfSales() {
         return idPointOfSales;
     }
 
-    public void setIdPointOfSales(String idPointOfSales) {
+    public void setIdPointOfSales(int idPointOfSales) {
         this.idPointOfSales = idPointOfSales;
     }
 
@@ -68,25 +77,35 @@ public class RepositoryPointOfSales {
         this.totalPrice = totalPrice;
     }
 
-    public Calendar getDateOfSell() {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Date getDateOfSell() {
         return dateOfSell;
     }
 
-    public void setDateOfSell(Calendar dateOfSell) {
+    public void setDateOfSell(Date dateOfSell) {
         this.dateOfSell = dateOfSell;
     }
 
     @Override
     public String toString() {
         return "RepositoryPointOfSales{" +
-                "idPointOfSales='" + idPointOfSales + '\'' +
-                ", ProductName='" + productName + '\'' +
+                "id=" + id +
+                ", idPointOfSales=" + idPointOfSales +
+                ", productName='" + productName + '\'' +
                 ", amountOfProduct=" + amountOfProduct +
                 ", priceForOneProduct=" + priceForOneProduct +
                 ", totalPrice=" + totalPrice +
                 ", dateOfSell=" + dateOfSell +
                 '}';
     }
+
 
 //    public  void vv() {
 //        SimpleDateFormat sdf = new SimpleDateFormat("yyyy MMM dd HH:mm:ss");

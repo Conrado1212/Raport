@@ -49,7 +49,12 @@ img.avatar {
   width: 10%;
   border-radius: 20%;
 }
+.logo{
 
+width: 100px;
+    height: 100px;
+
+}
 /* Add padding to containers */
 .container {
   padding: 16px;
