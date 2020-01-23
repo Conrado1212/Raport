@@ -12,6 +12,7 @@ import pl.edu.wszib.SessionObject;
 import pl.edu.wszib.dao.impl.ReportThatYouCanSeeDAOImpl;
 import pl.edu.wszib.model.ReportThatYouCanSee;
 import pl.edu.wszib.model.User;
+import pl.edu.wszib.rest.IReportThatYouCanSeeRest;
 
 import javax.annotation.Resource;
 import java.util.Calendar;
@@ -19,6 +20,8 @@ import java.util.Calendar;
 @Controller
 public class ReportThatYouCanSeeController {
 
+    @Autowired
+    IReportThatYouCanSeeRest reportThatYouCanSeeRest;
     @Autowired
     ReportThatYouCanSeeDAOImpl reportThatYouCanSeeDAO;
     @Resource(name = "sessionObject")
@@ -35,23 +38,22 @@ public class ReportThatYouCanSeeController {
     }
 
     @RequestMapping(value = "/addReportThatYouCanSee",method = RequestMethod.GET)
-    public String addReportThatYouCanSee(Model model){
-        model.addAttribute("addReportThatYouCanSeeKey",new ReportThatYouCanSee());
+    public String addReportThatYouCanSee(){
+        this.reportThatYouCanSeeRest.callAndAddToReportThatYouCanSeeDao();
         if(this.sessionObject.getUser() == null){
             return "redirect:loginPage";
         }
-        return "addReportThatYouCanSee";
+        return "redirectallReportThatYouCanSee";
     }
 
-    @RequestMapping(value = "/addReportThatYouCanSee",method = RequestMethod.POST)
+  /*  @RequestMapping(value = "/addReportThatYouCanSee",method = RequestMethod.POST)
     public String addReportThatYouCanSeeForm(@ModelAttribute ReportThatYouCanSee reportThatYouCanSee , Model model){
-        reportThatYouCanSee.setWhenWasLogged((Calendar.getInstance().getTime()));
         this.reportThatYouCanSeeDAO.saveRaport(reportThatYouCanSee);
         if(this.sessionObject.getUser() == null){
             return "redirect:loginPage";
         }
         return "redirect:allReportThatYouCanSee";
-    }
+    }*/
 
 
 
