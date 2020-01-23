@@ -12,24 +12,44 @@
     <link rel="stylesheet" type="text/css" href="allReportThatYouCanSee-form.css">
 
 </head>
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  border: 1px solid #ddd;
+}
 
+th, td {
+  text-align: centre;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #C0C0C0C0;
+}
+</style>
 <body>
 
-<center><p id="hello-text"><b>Wszystkie raporty</b></p></center>
+<center>  <h1>AllReportThatYouCanSee</h1></center>
 
 <div id="allReportThatYouCanSee-form-wrapper">
 
-    <center> <table class="text-list">
-
+    <center> <table >
+        <tr>
+            <th>Login </th>
+            <th>PointOfSales </th>
+            <th>WhenWasLogged</th>
+        </tr>
         <form action="/allReportThatYouCanSee" method="post" id="allReportThatYouCanSee-form">
 
             <div th:each="reportThatYouCanSee : ${allReportThatYouCanSee}">
 
-                <td>  <div  th:text="'Login: '+${reportThatYouCanSee.login}"></div></td>
+                <td>  <div  th:text="'  '+${reportThatYouCanSee.login}"></div></td>
 
-                <td>  <div  th:text="'PointOfSales: '+${reportThatYouCanSee.pointOfSales}"></div></td>
+                <td>  <div  th:text="' '+${reportThatYouCanSee.pointOfSales}"></div></td>
 
-                <td>   <div  th:text="'WhenWasLogged: '+${reportThatYouCanSee.whenWasLogged}"></div></td><tr></tr>
+                <td>   <div  th:text="' '+${reportThatYouCanSee.whenWasLogged}"></div></td><tr></tr>
 
             </div>
 
