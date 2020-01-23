@@ -4,7 +4,7 @@ form {
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
+input[type=text], input[type=password],input[type=number] {
   width: 25%;
     height: 100%;
   padding: 12px 20px;
@@ -12,7 +12,9 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+font-family: Calibri;
 }
+
 
 /* Set a style for all buttons */
 button {
@@ -49,12 +51,7 @@ img.avatar {
   width: 10%;
   border-radius: 20%;
 }
-.logo{
 
-width: 100px;
-    height: 100px;
-
-}
 /* Add padding to containers */
 .container {
   padding: 16px;

@@ -2,7 +2,6 @@ package pl.edu.wszib.rest.impl;
 
 import org.springframework.web.client.RestTemplate;
 import pl.edu.wszib.dao.IReportThatYouCanSeeDAO;
-import pl.edu.wszib.dao.IRepositoryPointOfSalesDAO;
 import pl.edu.wszib.model.ReportThatYouCanSee;
 import pl.edu.wszib.rest.IReportThatYouCanSeeRest;
 import pl.edu.wszib.rest.response.ReportThatYouCanSeeServiceResponse;

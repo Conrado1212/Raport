@@ -6,11 +6,53 @@
     <link rel="stylesheet" type="text/css" href="login-form.css">
     <link rel="stylesheet" type="text/css" href="components.css">
 </head>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        font-family: "Calibri", Calibri, sans-serif;
+    }
+
+    li {
+        float: left;
+        border-right:1px solid #bbb;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #989898;
+    }
+
+    .active {
+        background-color: #989898;
+    }
+</style>
+</head>
 <body>
+<ul>
+<li><a class="active" href="/mainPage">Home</a></li>
+<li><a class="active">Report:</a></li>
+<li><a href="/allRaport">RTCBS</a></li><li>
+    <a href="/UserReport">User Statistics</a></li>
+<li><a href="#news">Point of sale statistics</a></li>
+<li><a href="#contact">Product statistics</a></li>
+</ul>
+                                                                                                                                                                                                                                       </ul>
 <form action="/loginPage" method="post" id="login-form">
-    <div>
-        <img src="logo.png" alt="Logo" class="logo">
-    </div>
     <div class="imgcontainer">
         <img src="avatar.jpg" alt="Avatar" class="avatar">
 
@@ -24,14 +66,10 @@
         <center> <input type="password"th:field="*{loginKey.pass}" placeholder="Enter Password" name="psw" required></center>
 
         <center> <button type="submit">Login</button></center>
-        <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+    <div class="container" style="background-color:#989898">
+
     </div>
 
 </form>

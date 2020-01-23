@@ -8,7 +8,9 @@
     width: 400px;
     display: block;
     margin: 10px auto;
+    font-family: Calibri, serif;
 }
+
 
 .button-box {
     border-radius: 25px;

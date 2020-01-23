@@ -1,7 +1,6 @@
 package pl.edu.wszib.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import pl.edu.wszib.SessionObject;
@@ -11,13 +10,8 @@ import pl.edu.wszib.rest.IReportThatYouCanSeeRest;
 import pl.edu.wszib.rest.response.ReportThatYouCanSeeServiceResponse;
 
 import javax.annotation.Resource;
-
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-
-import java.util.Date;
 import java.util.List;
-import java.util.Queue;
 
 @org.springframework.web.bind.annotation.RestController
 public class ReportThatYouCanSeeRestController {
@@ -35,10 +29,6 @@ public class ReportThatYouCanSeeRestController {
     List<ReportThatYouCanSee> reportThatYouCanSees = new ArrayList<>();
     @RequestMapping(value = "/getAllReportss",method = RequestMethod.GET)
     public ReportThatYouCanSeeServiceResponse getAllReportss() {
-
-
-
-
             ReportThatYouCanSee reportThatYouCanSee = new ReportThatYouCanSee();
             reportThatYouCanSee.setLogin("Piotr");
             reportThatYouCanSee.setPointOfSales("point");

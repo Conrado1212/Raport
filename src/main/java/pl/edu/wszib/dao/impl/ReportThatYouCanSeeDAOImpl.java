@@ -10,9 +10,6 @@ import org.springframework.stereotype.Component;
 import pl.edu.wszib.dao.IReportThatYouCanSeeDAO;
 import pl.edu.wszib.model.ReportThatYouCanSee;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Component

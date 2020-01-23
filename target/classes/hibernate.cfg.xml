@@ -6,8 +6,7 @@
     <session-factory>
         <!-- Database Connection settings -->
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/reportthatyoucansee</property>
-
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/report</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password"></property>
 
@@ -22,6 +21,7 @@
 
         <!-- mappings -->
         <mapping class="pl.edu.wszib.model.ReportThatYouCanSee" />
-
+        <mapping class="pl.edu.wszib.model.Sales"/>
+        <mapping class="pl.edu.wszib.model.SalesDetails"/>
     </session-factory>
 </hibernate-configuration>
