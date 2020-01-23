@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import pl.edu.wszib.SessionObject;
 import pl.edu.wszib.dao.impl.SalesDAOImpl;
 import pl.edu.wszib.model.Sales;
 import pl.edu.wszib.model.User;
@@ -14,6 +15,7 @@ import pl.edu.wszib.rest.ISaleRest;
 import pl.edu.wszib.rest.response.UserReportServiceResponse;
 import pl.edu.wszib.services.IUserReport;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,11 +32,17 @@ public class UserReportController {
     @Autowired
     ISaleRest saleRest;
 
+    @Resource(name = "sessionObject")
+    SessionObject sessionObject;
+
 
 
 
     @RequestMapping(value = "/UserReport", method = RequestMethod.GET)
     public String showLoginForm(Model model) {
+        if(this.sessionObject.getUser() == null){
+            return "redirect:loginPage";
+        }
         model.addAttribute("userID", new UserReport());
         model.addAttribute("errorMessage", "");
         return "UserReportPage";
@@ -42,6 +50,9 @@ public class UserReportController {
 
     @RequestMapping(value = "/UserReport", method = RequestMethod.POST)
     public String authenticateUser(@ModelAttribute("userID") UserReport userReport1, Model model) {
+        if(this.sessionObject.getUser() == null){
+            return "redirect:loginPage";
+        }
         int authResult = userReport1.getUserID();
 
 
@@ -60,6 +71,9 @@ public class UserReportController {
 
         @RequestMapping(value ="/SalesUpdate", method = RequestMethod.GET)
         public String addSales(){
+            if(this.sessionObject.getUser() == null){
+                return "redirect:loginPage";
+            }
             saleRest.callAndAddToDAOSales();
             return "redirect:mainPage";
         }

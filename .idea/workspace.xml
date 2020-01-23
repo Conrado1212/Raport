@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="74a6388d-8d91-4087-94db-0fcf5754bda8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/RestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/UserReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/wszib/controllers/UserReportController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/controllers/UserReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/controllers/UserReportController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/wszib/rest/impl/salesRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/wszib/rest/impl/salesRest.class" afterDir="false" />
     </list>
@@ -97,6 +99,7 @@
       <workItem from="1579611463608" duration="1887000" />
       <workItem from="1579719087859" duration="8188000" />
       <workItem from="1579774244880" duration="22008000" />
+      <workItem from="1579800648154" duration="687000" />
     </task>
     <task id="LOCAL-00001" summary="taa">
       <created>1579800410668</created>
@@ -144,6 +147,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="210" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579611611537" />
+    <state x="690" y="268" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1579801203517">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579801203516" />
     <state x="357" y="119" width="1121" height="809" key="CommitChangelistDialog2" timestamp="1579800408825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
