@@ -24,6 +24,9 @@ public class ReportThatYouCanSeeRestImpl implements IReportThatYouCanSeeRest {
                     ReportThatYouCanSeeServiceResponse.class);
             for(ReportThatYouCanSee reportThatYouCanSee : reportThatYouCanSeeServiceResponse.getReportThatYouCanSees()){
                 reportThatYouCanSeeDAO.saveRaport(reportThatYouCanSee);
+                System.out.println("test");
+                System.out.println(reportThatYouCanSeeServiceResponse.getReportThatYouCanSees());
+
             }
 
             System.out.println("Db");
