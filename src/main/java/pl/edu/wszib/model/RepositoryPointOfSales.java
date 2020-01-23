@@ -15,17 +15,6 @@ public class RepositoryPointOfSales {
     @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
-
-    public RepositoryPointOfSales(int idPointOfSales, String productName, int amountOfProduct, int priceForOneProduct, int totalPrice, Date dateOfSell) {
-        this.idPointOfSales = idPointOfSales;
-        this.productName = productName;
-        this.amountOfProduct = amountOfProduct;
-        this.priceForOneProduct = priceForOneProduct;
-        this.totalPrice = totalPrice;
-        this.dateOfSell = dateOfSell;
-    }
-
     private int idPointOfSales;
     private String productName;
     private int amountOfProduct;
@@ -38,12 +27,13 @@ public class RepositoryPointOfSales {
 
     }
 
-    public RepositoryPointOfSales(int idPointOfSales, String productName, int amountOfProduct, int priceForOneProduct) {
+    public RepositoryPointOfSales(int idPointOfSales, String productName, int amountOfProduct, int priceForOneProduct, int totalPrice, Date dateOfSell) {
         this.idPointOfSales = idPointOfSales;
         this.productName = productName;
         this.amountOfProduct = amountOfProduct;
         this.priceForOneProduct = priceForOneProduct;
-        this.totalPrice = amountOfProduct * priceForOneProduct;
+        this.totalPrice = totalPrice;
+        this.dateOfSell = dateOfSell;
     }
 
     public int getIdPointOfSales() {

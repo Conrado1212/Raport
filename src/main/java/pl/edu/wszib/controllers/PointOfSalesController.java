@@ -79,17 +79,17 @@ public class PointOfSalesController {
         return "productsFromRepositoryByPoint";
     }
 
-    @RequestMapping(value = "/showAverageOfDay", method = RequestMethod.POST)
-    public String getAverageOfDay(@RequestParam("id") int idPointOfSales,  @RequestParam("firstDay") String firstDay, @RequestParam("secondDay") String secondDay,  Model model) throws ParseException {
-        Date day1=new SimpleDateFormat("dd-MM-yyyy").parse(firstDay);
-        Date day2=new SimpleDateFormat("dd-MM-yyyy").parse(secondDay);
-        model.addAttribute("allProducts", this.repositoryPointOfSalesService.averageOfDay(idPointOfSales,day1,day2));
-        return "averageOfDay";
-    }
-
-    @RequestMapping(value = "/showAverageOfMonth", method = RequestMethod.POST)
-    public String getAverageOfMonth(@RequestParam("id") int idPointOfSales, @RequestParam("firstMonth") Date firstMonth, @RequestParam("secondMonth") Date secondMonth, Model model) {
-        model.addAttribute("allProducts", this.repositoryPointOfSalesService.averageOfMonth(idPointOfSales,firstMonth,secondMonth));
-        return "averageOfMonth";
-    }
+//    @RequestMapping(value = "/showAverageOfDay", method = RequestMethod.POST)
+//    public String getAverageOfDay(@RequestParam("id") int idPointOfSales,  @RequestParam("firstDay") String firstDay, @RequestParam("secondDay") String secondDay,  Model model) throws ParseException {
+//        Date day1=new SimpleDateFormat("dd-MM-yyyy").parse(firstDay);
+//        Date day2=new SimpleDateFormat("dd-MM-yyyy").parse(secondDay);
+//        model.addAttribute("allProducts", this.repositoryPointOfSalesService.averageOfDay(idPointOfSales,day1,day2));
+//        return "averageOfDay";
+//    }
+//
+//    @RequestMapping(value = "/showAverageOfMonth", method = RequestMethod.POST)
+//    public String getAverageOfMonth(@RequestParam("id") int idPointOfSales, @RequestParam("firstMonth") Date firstMonth, @RequestParam("secondMonth") Date secondMonth, Model model) {
+//        model.addAttribute("allProducts", this.repositoryPointOfSalesService.averageOfMonth(idPointOfSales,firstMonth,secondMonth));
+//        return "averageOfMonth";
+//    }
 }
