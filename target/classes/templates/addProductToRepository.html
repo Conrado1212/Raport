@@ -2,17 +2,16 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>ScooterApp</title>
+    <title>addProductToRepository.html</title>
 </head>
-<body style="margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden">
+<body>
 
-<form method ="post">
-    <input type ="text" placeholder="idPointOfSales" name="id" th:field="*{userModel.idPointOfSales}">
-    <input type ="text" placeholder="productName" name="name" th:field="*{userModel.productName}">
-    <input type ="text" placeholder="priceForOneProduct" name="surname" th:field="*{userModel.priceForOneProduct}">
-    <input type ="text" placeholder="amountOfProduct" name="position" th:field="*{userModel.amountOfProduct}">
-
-    <input type ="submit" value="OK">
+<form method="post">
+    <input type="text" placeholder="idPointOfSales" name="id" th:field="*{userModel.idPointOfSales}">
+    <input type="text" placeholder="productName" name="name" th:field="*{userModel.productName}">
+    <input type="text" placeholder="priceForOneProduct" name="surname" th:field="*{userModel.priceForOneProduct}">
+    <input type="text" placeholder="amountOfProduct" name="position" th:field="*{userModel.amountOfProduct}">
+    <input type="submit" value="OK">
 </form>
 
 </body>

@@ -6,6 +6,7 @@ import pl.edu.wszib.model.RepositoryPointOfSales;
 import pl.edu.wszib.services.IRepositoryPointOfSalesService;
 
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class RepositoryPointOfSalesServiceImpl implements IRepositoryPointOfSalesService {
@@ -43,12 +44,12 @@ public class RepositoryPointOfSalesServiceImpl implements IRepositoryPointOfSale
     }
 
     @Override
-    public List<RepositoryPointOfSales> averageOfDay(int idPointOfSales, Calendar firstDay, Calendar secondDay) {
+    public List<RepositoryPointOfSales> averageOfDay(int idPointOfSales, Date firstDay, Date secondDay) {
         return this.repositoryPointOfSalesDAO.averageOfDay(idPointOfSales, firstDay, secondDay);
     }
 
     @Override
-    public List<RepositoryPointOfSales> averageOfMonth(int idPointOfSales, Calendar firstMonth, Calendar secondMonth) {
+    public List<RepositoryPointOfSales> averageOfMonth(int idPointOfSales, Date firstMonth, Date secondMonth) {
         return this.repositoryPointOfSalesDAO.averageOfMonth(idPointOfSales, firstMonth, secondMonth);
     }
 }

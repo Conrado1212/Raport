@@ -3,6 +3,7 @@ package pl.edu.wszib.services;
 import pl.edu.wszib.model.RepositoryPointOfSales;
 
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public interface IRepositoryPointOfSalesService {
@@ -17,8 +18,8 @@ public interface IRepositoryPointOfSalesService {
 
     List<RepositoryPointOfSales> getProductsFromRepositoryByPoint(int idPointOfSales); // return  list of products from pointOfSales grouped by idPointOfSales and productName and sum amount and totalPrice
 
-    List<RepositoryPointOfSales> averageOfDay(int idPointOfSales, Calendar firstDay, Calendar secondDay); //return list of average sales per day in the interval firstDay - secondDay
+    List<RepositoryPointOfSales> averageOfDay(int idPointOfSales, Date firstDay, Date secondDay); //return list of average sales per day in the interval firstDay - secondDay
 
-    List<RepositoryPointOfSales> averageOfMonth(int idPointOfSales, Calendar firstMonth, Calendar secondMonth); //return list of average sales per month in the interval firstMonth - secondMonth
+    List<RepositoryPointOfSales> averageOfMonth(int idPointOfSales, Date firstMonth, Date secondMonth); //return list of average sales per month in the interval firstMonth - secondMonth
 
 }

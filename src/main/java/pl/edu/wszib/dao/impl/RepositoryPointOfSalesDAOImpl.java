@@ -9,6 +9,7 @@ import pl.edu.wszib.dao.IRepositoryPointOfSalesDAO;
 import pl.edu.wszib.model.RepositoryPointOfSales;
 
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class RepositoryPointOfSalesDAOImpl implements IRepositoryPointOfSalesDAO {
@@ -87,18 +88,31 @@ public class RepositoryPointOfSalesDAOImpl implements IRepositoryPointOfSalesDAO
     }
 
     @Override
-    public List<RepositoryPointOfSales> averageOfDay(int idPointOfSales, Calendar firstDay, Calendar secondDay) {
+    public List<RepositoryPointOfSales> averageOfDay(int idPointOfSales, Date firstDay, Date secondDay) {
+        Calendar firstDayCal = Calendar.getInstance();
+        firstDayCal.setTime(firstDay);
+        int firDay = firstDayCal.get(Calendar.DAY_OF_MONTH);
+        int firMonth = firstDayCal.get(Calendar.MONTH);
+        int firYear = firstDayCal.get(Calendar.YEAR);
+
+        Calendar secondDayCal = Calendar.getInstance();
+        secondDayCal.setTime(secondDay);
+        int secDay = secondDayCal.get(Calendar.DAY_OF_MONTH);
+        int secMonth = secondDayCal.get(Calendar.MONTH);
+        int secYear = secondDayCal.get(Calendar.YEAR);
+
         Session session;
         session = this.sessionFactory.openSession();
         List<RepositoryPointOfSales> listAverageOfDayFromRepositoryByPoint = session
                 .createQuery("SELECT idPointOfSales, AVG(totalPrice) AS totalPricePerDay, dateOfSell, " +
-                        "AVG(SELECT  AVG(totalPrice) FROM pl.edu.wszib.model.RepositoryPointOfSales WHERE idPointOfSales = '" + idPointOfSales + "' AND dateOfSell between '" + firstDay.get(Calendar.YEAR) + "'-'" + firstDay.get(Calendar.MONTH) + "'-'" + firstDay.get(Calendar.DAY_OF_MONTH) + "' 00:00:00' and '" +
-                        +secondDay.get(Calendar.YEAR) + "'-'" + secondDay.get(Calendar.MONTH) + "'-'" + secondDay.get(Calendar.DAY_OF_MONTH) + "' 23:59:00' GROUP BY idPointOfSales, day(dateOfSell))) AS averagePerDay" +
+                        "AVG(SELECT  AVG(totalPrice) FROM pl.edu.wszib.model.RepositoryPointOfSales WHERE idPointOfSales = '" + idPointOfSales + "' AND dateOfSell between 2000-21-01 00:00:00' and 2000-23-01 23:59:00' GROUP BY idPointOfSales, day(dateOfSell))) AS averagePerDay" +
                         "  FROM pl.edu.wszib.model.RepositoryPointOfSales " +
-                        "WHERE idPointOfSales = '" + idPointOfSales + "' AND dateOfSell between '" + firstDay.get(Calendar.YEAR) + "'-'" + firstDay.get(Calendar.MONTH) + "'-'" + firstDay.get(Calendar.DAY_OF_MONTH) + "' 00:00:00' and '"
-                        + secondDay.get(Calendar.YEAR) + "'-'" + secondDay.get(Calendar.MONTH) + "'-'" + secondDay.get(Calendar.DAY_OF_MONTH) + "' 23:59:00' " +
+                        "WHERE idPointOfSales = '" + idPointOfSales + "' AND dateOfSell between 2000-21-01 00:00:00' and 2000-23-01 23:59:00' " +
                         " GROUP BY idPointOfSales, day(dateOfSell)")
                 .list();
+
+        secondDay.getTime();
+
         session.close();
 
         return listAverageOfDayFromRepositoryByPoint;
@@ -106,17 +120,28 @@ public class RepositoryPointOfSalesDAOImpl implements IRepositoryPointOfSalesDAO
     }
 
     @Override
-    public List<RepositoryPointOfSales> averageOfMonth(int idPointOfSales, Calendar firstMonth, Calendar secondMonth) {
+    public List<RepositoryPointOfSales> averageOfMonth(int idPointOfSales, Date firstMonth, Date secondMonth) {
+        Calendar firstDayCal = Calendar.getInstance();
+        firstDayCal.setTime(firstMonth);
+        int firDay = firstDayCal.get(Calendar.DAY_OF_MONTH);
+        int firMonth = firstDayCal.get(Calendar.MONTH);
+        int firYear = firstDayCal.get(Calendar.YEAR);
+
+        Calendar secondDayCal = Calendar.getInstance();
+        secondDayCal.setTime(secondMonth);
+        int secDay = secondDayCal.get(Calendar.DAY_OF_MONTH);
+        int secMonth = secondDayCal.get(Calendar.MONTH);
+        int secYear = secondDayCal.get(Calendar.YEAR);
         Session session;
         session = this.sessionFactory.openSession();
         List<RepositoryPointOfSales> listAverageOfMonthFromRepositoryByPoint = session
                 .createQuery("SELECT idPointOfSales, AVG(totalPrice) AS averagePrice, dateOfSell, " +
                         "AVG(SELECT AVG(totalPrice)  FROM pl.edu.wszib.model.RepositoryPointOfSales " +
-                        "WHERE idPointOfSales = '" + idPointOfSales + "' AND dateOfSell between '" + firstMonth.get(Calendar.YEAR) + "'-'" + firstMonth.get(Calendar.MONTH) + "'-00 00:00:00' and '"
-                        + secondMonth.get(Calendar.YEAR) + "'-'" + secondMonth.get(Calendar.MONTH) + "'-31 23:59:00' " + " GROUP BY idPointOfSales, month(dateOfSell))) AS averagePerMonth" +
+                        "WHERE idPointOfSales = '" + idPointOfSales + "' AND dateOfSell between '" + firYear + "'-'" + firMonth + "'-00 00:00:00' and '"
+                        + secYear + "'-'" + secMonth + "'-31 23:59:00' " + " GROUP BY idPointOfSales, month(dateOfSell))) AS averagePerMonth" +
                         "FROM pl.edu.wszib.model.RepositoryPointOfSales " +
-                        "WHERE idPointOfSales = '" + idPointOfSales + "' AND dateOfSell between '" + firstMonth.get(Calendar.YEAR) + "'-'" + firstMonth.get(Calendar.MONTH) + "'-00 00:00:00' and '"
-                        + secondMonth.get(Calendar.YEAR) + "'-'" + secondMonth.get(Calendar.MONTH) + "'-31 23:59:00' " +
+                        "WHERE idPointOfSales = '" + idPointOfSales + "' AND dateOfSell between '" + firYear + "'-'" + firMonth + "'-00 00:00:00' and '"
+                        + secYear + "'-'" + secMonth + "'-31 23:59:00' " +
                         " GROUP BY idPointOfSales, month(dateOfSell)")
                 .list();
         session.close();

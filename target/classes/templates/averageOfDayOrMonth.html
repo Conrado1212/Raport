@@ -5,6 +5,21 @@
     <title>Average of day or month</title>
 </head>
 <body>
+<form action="/showAverageOfDay" method="post">
+    <input type="submit" class="button-box" value="showAverageOfDay">
+    <input type="text" placeholder="idPointOfSales" name="id">
+    <input type="date" placeholder="firstDay" name="firstDay">
+    <input type="date" placeholder="secondDay" name="secondDay">
+</form>
+<form action="/showAverageOfMonth" method="post">
+    <input type="submit" class="button-box" value="showAverageOfMonth">
+    <input type="text" placeholder="idPointOfSales" name="id">
+    <input type="date" placeholder="firstMonth" name="firstMonth">
+    <input type="date" placeholder="secondMonth" name="secondMonth">
+</form>
+
+
+
 <a href="/pointOfSalesPage" class="button">Home</a><br><br>
 </body>
 </html>
