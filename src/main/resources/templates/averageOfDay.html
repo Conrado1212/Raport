@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Average of day</title>
+    <link rel="stylesheet" type="text/css" href="mainMenu.css">
+</head>
+
 </head>
 <body>
+
+<ul>
+    <li><a class="active" href="/mainPage">Home</a></li>
+    <li><a class="active">Report:</a></li>
+    <li><a href="/reportThatYouCanSeePage">RTCBS</a></li><li>
+    <a href="/UserReport">User Statistics</a></li>
+    <li><a href="pointOfSalesPage">Point of sale statistics</a></li>
+    <li><a href="#contact">Product statistics</a></li>
+</ul>
 <div th:each="product: ${allProducts}">
     <div th:text="'idPointOfSales: '+${product[0]}"></div>
     <div th:text="'productName: '+${product[1]}"></div>

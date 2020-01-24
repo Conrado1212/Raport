@@ -30,7 +30,7 @@ public class PointOfSalesController {
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String register(@ModelAttribute RepositoryPointOfSales repositoryPointOfSales, Model model) {
-       //repositoryPointOfSales.setDateOfSell(Calendar.getInstance().getTime());
+        repositoryPointOfSales.setDateOfSell(Calendar.getInstance().getTime());
         repositoryPointOfSales.setTotalPrice(repositoryPointOfSales.getAmountOfProduct() * repositoryPointOfSales.getPriceForOneProduct());
         this.repositoryPointOfSalesService.addProductAfterSale(repositoryPointOfSales);
         return "pointOfSalesPage";
