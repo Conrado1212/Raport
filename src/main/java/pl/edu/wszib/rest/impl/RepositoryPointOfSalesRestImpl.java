@@ -17,7 +17,7 @@ public class RepositoryPointOfSalesRestImpl implements IRepositoryPointOfSalesRe
         this.repositoryPointOfSalesDAO = repositoryPointOfSalesDAO;
     }
 
-
+    
     @Override
     public void callAndAddToRepositoryPointOfSalesDAO() {
         String url = "http://localhost:8282/ReportPointOfSales";
